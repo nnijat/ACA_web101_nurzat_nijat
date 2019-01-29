@@ -61,3 +61,7 @@ img#photo {
 .contact_text {
   margin: 15px;
 }
+main{
+  background-color: #ffffff;
+  height: 800px;
+}
