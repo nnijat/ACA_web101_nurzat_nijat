@@ -61,7 +61,17 @@ img#photo {
 .contact_text {
   margin: 15px;
 }
-main{
+main {
   background-color: #ffffff;
   height: 800px;
+}
+
+@media (max-width: 1000px) {
+  main,
+  header {
+    width: 768px;
+  }
+  html {
+    margin: auto;
+  }
 }
