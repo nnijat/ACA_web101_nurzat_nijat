@@ -16,10 +16,10 @@ body {
     "greeting greeting greeting"
     "calendar calendar date"
     "todo calculator calculator";
-  max-width: 999px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: auto;
+  width: auto;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 /*
@@ -389,6 +389,8 @@ All about calculator property
 */
 .calculator {
   grid-area: calculator;
+  align-self: center;
+  justify-self: center;
 }
 .calculator-container {
   height: 100%;
@@ -418,7 +420,7 @@ All about calculator property
   align-self: center;
   justify-self: center;
   color: white;
-  padding: 20px 20px;
+  padding: 10px 10px;
 }
 
 .display {
