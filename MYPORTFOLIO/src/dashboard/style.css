@@ -1,0 +1,491 @@
+html {
+  background-color: rgb(4, 32, 58);
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+}
+.container {
+  height: 1000px;
+  background-color: rgba(8, 69, 110, 0.514);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "clock clock clock"
+    "greeting greeting greeting"
+    "calendar calendar date"
+    "todo calculator calculator";
+  max-width: 999px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+All about clock property
+*/
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock {
+  grid-area: clock;
+  color: white;
+  font-size: 300%;
+  padding: 16px;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
+}
+
+/*
+All about greeting property
+*/
+.greeting {
+  grid-area: greeting;
+  color: white;
+  padding: 15px;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
+  font-size: 400%;
+}
+
+/*
+All about calendar property
+*/
+.calendar {
+  grid-area: calendar;
+  color: white;
+}
+.calendar-container {
+  height: auto;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-areas:
+    "yearmonth yearmonth yearmonth yearmonth yearmonth yearmonth yearmonth"
+    "sunday monday tuesday wednesday thursday friday saturday"
+    "twentynine thirdy thirdyone one two three four "
+    "five six seven eight nine ten eleven"
+    "twelve thirteen fourteen fifteen sixteen seventeen eighteen"
+    "nineteen twenty twentyone twentytwo twentythree twentyfour twentyfive"
+    "twentysix twentyseven  twentyeight . . . .";
+
+  max-width: auto;
+}
+
+.sun {
+  grid-area: sunday;
+}
+.mon {
+  grid-area: monday;
+}
+.tue {
+  grid-area: tuesday;
+}
+.wed {
+  grid-area: wednesday;
+}
+.thu {
+  grid-area: thursday;
+}
+.fri {
+  grid-area: friday;
+}
+.sat {
+  grid-area: saturday;
+}
+.box-one {
+  grid-area: one;
+  justify-self: start;
+}
+
+.box-two {
+  grid-area: two;
+}
+
+.box-three {
+  grid-area: three;
+}
+
+.box-four {
+  grid-area: four;
+}
+
+.box-five {
+  grid-area: five;
+}
+
+.box-six {
+  grid-area: six;
+}
+
+.box-seven {
+  grid-area: seven;
+}
+
+.box-eight {
+  grid-area: eight;
+}
+
+.box-nine {
+  grid-area: nine;
+}
+
+.box-ten {
+  grid-area: ten;
+}
+
+.box-eleven {
+  grid-area: eleven;
+}
+
+.box-twelve {
+  grid-area: twelve;
+}
+
+.box-thirteen {
+  grid-area: thirteen;
+}
+
+.box-fourteen {
+  grid-area: fourteen;
+}
+
+.box-fifteen {
+  grid-area: fifteen;
+}
+
+.box-sixteen {
+  grid-area: sixteen;
+}
+
+.box-seventeen {
+  grid-area: seventeen;
+}
+
+.box-eighteen {
+  grid-area: eighteen;
+}
+
+.box-nineteen {
+  grid-area: nineteen;
+}
+
+.box-twenty {
+  grid-area: twenty;
+}
+
+.box-twentyone {
+  grid-area: twentyone;
+}
+
+.box-twentytwo {
+  grid-area: twentytwo;
+}
+
+.box-twentythree {
+  grid-area: twentythree;
+}
+
+.box-twentyfour {
+  grid-area: twentyfour;
+}
+
+.box-twentyfive {
+  grid-area: twentyfive;
+}
+
+.box-twentysix {
+  grid-area: twentysix;
+}
+
+.box-twentyseven {
+  grid-area: twentyseven;
+}
+
+.box-twentyeight {
+  grid-area: twentyeight;
+}
+.box-twentynine {
+  grid-area: twentynine;
+}
+.box-thirdy {
+  grid-area: thirdy;
+}
+.box-thirdyone {
+  grid-area: thirdyone;
+}
+
+.yearmonth {
+  grid-area: yearmonth;
+  padding: 15px;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
+  font-size: 200%;
+  font-weight: bold;
+}
+.weekday {
+  padding: 15px;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
+  font-size: 100%;
+  font-weight: bold;
+}
+.num {
+  padding-left: 25%;
+}
+
+/*
+All about Date property
+*/
+.date {
+  grid-area: date;
+  color: white;
+}
+.date-container {
+  height: auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "week "
+    "digit";
+  max-width: auto;
+}
+
+.border {
+  border-radius: 50px;
+  border: 1px solid rgb(166, 176, 192);
+}
+
+.week {
+  grid-area: week;
+  padding: 15px;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
+  font-size: 190%;
+  font-weight: bold;
+}
+.digit {
+  grid-area: digit;
+  padding: 15px;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
+  font-size: 500%;
+  font-weight: bold;
+}
+
+/*
+All about todo property
+*/
+.todo {
+  grid-area: todo;
+}
+
+.todo-container {
+  height: auto;
+  display: grid;
+  grid-template-columns: auto 120%;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-areas:
+    "title title"
+    "firstcheckbox firsttodos"
+    "secondcheckbox secondtodos"
+    "thirdcheckbox thirdtodos"
+    "fourthcheckbox fourthtodos"
+    "fifthcheckbox fifthtodos"
+    "sixthcheckbox sixthtodos";
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25%;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 32, 34);
+  align-self: center;
+  justify-self: center;
+}
+
+input[type="checkbox"]:checked {
+  background-color: rgb(95, 195, 241);
+}
+
+.todo-container > div {
+  padding: 10px;
+  font-weight: 10px;
+  font-size: 160%;
+}
+.todo-list {
+  grid-area: title;
+  align-self: center;
+  justify-self: center;
+  color: paleturquoise;
+}
+.todo-item {
+  color: white;
+}
+.first-checkbox {
+  grid-area: firstcheckbox;
+}
+
+.first-todos {
+  grid-area: firsttodos;
+}
+
+.second-checkbox {
+  grid-area: secondcheckbox;
+}
+
+.second-todos {
+  grid-area: secondtodos;
+}
+
+.third-checkbox {
+  grid-area: thirdcheckbox;
+}
+
+.third-todos {
+  grid-area: thirdtodos;
+}
+
+.fourth-checkbox {
+  grid-area: fourthcheckbox;
+}
+
+.fourth-todos {
+  grid-area: fourthtodos;
+}
+
+.fifth-checkbox {
+  grid-area: fifthcheckbox;
+}
+
+.fifth-todos {
+  grid-area: fifthtodos;
+}
+
+.sixth-checkbox {
+  grid-area: sixthcheckbox;
+}
+
+.sixth-todos {
+  grid-area: sixthtodos;
+}
+
+/*
+All about calculator property
+*/
+.calculator {
+  grid-area: calculator;
+}
+.calculator-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "display display display display display"
+    "seven eight nine change delete"
+    "four five six multiply divide"
+    "one two three subtract equals"
+    "clear zero decimal add equals";
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.calculator-container > div {
+  font-size: 200%;
+  font-weight: lighter;
+}
+.cal-box {
+  border-radius: 100px;
+  border: 2px solid rgb(0, 195, 255);
+  align-self: center;
+  justify-self: center;
+  color: white;
+  padding: 20px 20px;
+}
+
+.display {
+  grid-area: display;
+  margin: auto;
+  padding: 20px 75px;
+}
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+.change {
+  grid-area: change;
+}
+.delete {
+  grid-area: delete;
+}
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+.multiply {
+  grid-area: multiply;
+}
+.divide {
+  grid-area: divide;
+}
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+.subtract {
+  grid-area: subtract;
+}
+.clear {
+  grid-area: clear;
+}
+.zero {
+  grid-area: zero;
+}
+.decimal {
+  grid-area: decimal;
+}
+.add {
+  grid-area: add;
+}
+.equals {
+  grid-area: equals;
+}
