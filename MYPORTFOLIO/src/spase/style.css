@@ -1,0 +1,56 @@
+body {
+  background-image: url("https://www.imgbase.info/images/safe-wallpapers/photography/sky/36253_sky.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  }
+  
+  header {
+   text-align: center;
+    font-size: 50px;
+    padding: 5%;
+    margin: auto;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-height: 800px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .image {
+    margin: auto;
+    text-align: center;
+    opacity: 0.8;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  p {
+    text-align: left;
+  }
+  
+  .image:hover  {
+      opacity: 1;
+    }
+  
+  @media ( min-width : 600px ){
+      .container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      max-height: 800px;
+      }
+    .image {
+      width: 28%;
+    }
+  }
