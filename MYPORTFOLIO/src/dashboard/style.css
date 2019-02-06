@@ -1,13 +1,11 @@
 html {
   background-color: rgb(4, 32, 58);
   font-family: Arial, Helvetica, sans-serif;
-}
-body {
-  margin: 0;
+  margin: auto;
 }
 .container {
-  height: 1000px;
-  background-color: rgba(8, 69, 110, 0.514);
+  height: auto;
+  /* background-color: rgba(107, 142, 165, 0.514); */
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto;
@@ -18,18 +16,12 @@ body {
     "todo calculator calculator";
   max-width: auto;
   width: auto;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: auto;
 }
 
 /*
 All about clock property
 */
-.clock-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .clock {
   grid-area: clock;
   color: white;
@@ -38,6 +30,11 @@ All about clock property
   align-self: center;
   justify-self: center;
   margin: auto;
+}
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*
@@ -49,7 +46,6 @@ All about greeting property
   padding: 15px;
   align-self: center;
   justify-self: center;
-  margin: auto;
   font-size: 400%;
 }
 
@@ -395,7 +391,7 @@ All about calculator property
 .calculator-container {
   height: 100%;
   display: grid;
-  grid-template-columns: 15% 15% 15% 15% 15%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
     "display display display display display"
@@ -403,10 +399,10 @@ All about calculator property
     "four five six multiply divide"
     "one two three subtract equals"
     "clear zero decimal add equals";
-  max-width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50px;
+  border-radius: 20px;
   border: 2px solid rgb(255, 255, 255);
 }
 
@@ -426,7 +422,7 @@ All about calculator property
 .display {
   grid-area: display;
   margin: auto;
-  padding: 20px 75px;
+  padding: 20px 76px;
 }
 .seven {
   grid-area: seven;
@@ -490,4 +486,65 @@ All about calculator property
 }
 .equals {
   grid-area: equals;
+}
+
+/* media quary for tablet */
+@media (min-width: 701px) and (max-width: 1000px) {
+  .container {
+    width: auto;
+    margin: auto;
+    max-height: auto;
+  }
+  .clock {
+    font-size: 200%;
+  }
+  .greeting {
+    font-size: 300%;
+  }
+  .date {
+    display: none;
+  }
+  .calendar {
+  }
+  .todo {
+  }
+  .calculator {
+  }
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    width: auto;
+    margin: auto;
+    max-height: auto;
+  }
+  .clock {
+    font-size: 100%;
+  }
+  .greeting {
+    font-size: 100%;
+  }
+  .date {
+    display: none;
+  }
+  .calendar {
+    display: none;
+  }
+  .todo {
+    font-size: 100%;
+  }
+  .todo-container{
+    padding-left: 20%;
+  }
+  .todo-list{
+    align-self: flex-start;
+    justify-self: flex-start;
+  }
+
+  .calculator {
+    display: none;
+  }
 }
