@@ -1,3 +1,12 @@
+body {
+  background-image: url("./images/background1.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 html {
   background-color: rgb(4, 32, 58);
   font-family: Arial, Helvetica, sans-serif;
@@ -8,11 +17,12 @@ html {
   /* background-color: rgba(107, 142, 165, 0.514); */
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
     "clock clock clock"
     "greeting greeting greeting"
-    "calendar calendar date"
+    ". date ."
+    "calendar calendar calendar"
     "todo calculator calculator";
   max-width: auto;
   width: auto;
@@ -55,6 +65,9 @@ All about calendar property
 .calendar {
   grid-area: calendar;
   color: white;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
 }
 .calendar-container {
   height: auto;
@@ -252,6 +265,9 @@ All about Date property
     "week "
     "digit";
   max-width: auto;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
 }
 
 .border {
@@ -536,10 +552,10 @@ All about calculator property
   .todo {
     font-size: 100%;
   }
-  .todo-container{
+  .todo-container {
     padding-left: 20%;
   }
-  .todo-list{
+  .todo-list {
     align-self: flex-start;
     justify-self: flex-start;
   }
