@@ -5,7 +5,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto
+  margin: auto;
 }
 
 html {
@@ -28,7 +28,7 @@ html {
   max-width: auto;
   width: auto;
   margin: auto;
-  row-gap: 5%
+  row-gap: 5%;
 }
 
 /*
@@ -530,7 +530,7 @@ All about calculator property
   .calculator {
   }
 }
-
+/* media quary for mobile */
 @media (min-width: 320px) and (max-width: 700px) {
   .container {
     display: flex;
@@ -564,6 +564,7 @@ All about calculator property
   }
 
   .calculator {
-    display: none;
+    font-size: 100%;
+    padding: 10%;
   }
 }
