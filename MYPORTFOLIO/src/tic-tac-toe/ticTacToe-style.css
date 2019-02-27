@@ -1,0 +1,62 @@
+.box-container {
+  height: 100vh;
+  display: grid;
+  grid-auto-columns: 25% 25% 25%;
+  grid-template-rows: 25% 25% 25%;
+  grid-template-areas:
+    "box1 box2 box3"
+    "box4 box5 box6"
+    "box7 box8 box9";
+    font-size: 100px;
+}
+
+/*Row one*/
+#topLeft {
+  grid-area: box1;
+  border: 3px solid green;
+  text-align: center;
+}
+#topCenter {
+  grid-area: box2;
+  border: 3px solid salmon;
+  text-align: center;
+}
+#topRight {
+  grid-area: box3;
+  border: 3px solid firebrick;
+  text-align: center;
+}
+
+/*Row two*/
+#midLeft {
+  grid-area: box4;
+  border: 3px solid aqua;
+  text-align: center;
+}
+#midCenter {
+  grid-area: box5;
+  border: 3px solid blue;
+  text-align: center;
+}
+#midRight {
+  grid-area: box6;
+  border: 3px solid chocolate;
+  text-align: center;
+}
+
+/*Row two*/
+#buttomLeft {
+  grid-area: box7;
+  border: 3px solid darkmagenta;
+  text-align: center;
+}
+#buttomCenter {
+  grid-area: box8;
+  border: 3px solid firebrick;
+  text-align: center;
+}
+#buttomRight {
+  grid-area: box9;
+  border: 3px solid goldenrod;
+  text-align: center;
+}
