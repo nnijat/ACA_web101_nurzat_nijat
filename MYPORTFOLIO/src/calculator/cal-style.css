@@ -1,0 +1,105 @@
+.calculator-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "display display display display display"
+    "seven eight nine change delete"
+    "four five six multiply divide"
+    "one two three subtract equals"
+    "clear zero decimal add equals";
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.calculator-container > div {
+  font-size: 200%;
+  font-weight: lighter;
+  color: #000;
+}
+.cal-box {
+  border-radius: 100px;
+  border: 2px solid rgb(0, 195, 255);
+  align-self: center;
+  justify-self: center;
+  color: white;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.display {
+  grid-area: display;
+  margin: auto;
+  padding: 20px 76px;
+  font-size: 200%;
+  font-weight: lighter;
+  color: #000;
+}
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+.change {
+  grid-area: change;
+}
+.delete {
+  grid-area: delete;
+}
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+.multiply {
+  grid-area: multiply;
+}
+.divide {
+  grid-area: divide;
+}
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+.subtract {
+  grid-area: subtract;
+}
+.clear {
+  grid-area: clear;
+}
+.zero {
+  grid-area: zero;
+}
+.decimal {
+  grid-area: decimal;
+}
+.add {
+  grid-area: add;
+}
+.equals {
+  grid-area: equals;
+  height: 100px;
+}
