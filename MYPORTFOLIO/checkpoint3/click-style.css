@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-areas: ". image .";
+  height: 500px;
+  width: 1200px;
+}
+
+.images {
+  grid-area: image;
+  margin: auto;
+}
+img {
+    width: 53%;
+    margin: -27%;
+}
